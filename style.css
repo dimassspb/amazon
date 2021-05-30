@@ -153,6 +153,7 @@ body {
 .review-cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .review-card {
@@ -236,4 +237,97 @@ body {
 .social__link {
   text-decoration: none;
   margin-left: 22px;
+}
+
+@media (max-width: 1200px) {
+  .conteiner {
+    max-width: 960px;
+  }
+
+  .header-content__title{
+    font-size: 36px;
+  }
+
+  .card {
+    flex-basis: 48%;
+  }
+
+  .review-card {
+    flex-basis: 48%;
+  }
+
+  .review__card {
+    margin-bottom: 30px;
+  }
+
+  .card-card__image {
+    width: 100%;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 15px 40px;
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    max-width: 760px;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .header-content__description {
+    max-width: 500px;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts__form {
+    margin-bottom: 50px;
+  }
+
+  .review-card {
+    margin-right: 23px;
+  }
+
+  .review-card:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    max-width: 90%;
+  }
+
+  .top {
+    flex-direction: column;
+    min-height: 100px;
+  }
+
+.header-content {
+  text-align: center;
+}
+
+  .header-content__title {
+    font-size: 24px;
+  }
+
+  .header-content__description {
+    font-size: 14px;
+  }
+
+  .header-content__image {
+    max-width:80%
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
 }
